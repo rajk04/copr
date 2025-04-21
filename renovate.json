@@ -11,5 +11,11 @@
         "datasource=(?<datasource>.*?) depName=(?<depName>.*?)\\s+Version:\\s+(?<currentValue>.*)"
       ]
     }
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
   ]
 }
