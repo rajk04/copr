@@ -26,8 +26,8 @@ jobs:
       run: rpmlint specs/ --strict
     - name: Build RPM
       run: |
-        for file in `ls`; do
-          echo "Building $file..."
-          spectool -Rg "$file"
-          rpmbuild -ba "$file"
+        for file in `ls specs/`; do
+          echo "Building specs/$file..."
+          spectool -Rg "specs/$file"
+          rpmbuild -ba "specs/$file"
         done
