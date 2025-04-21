@@ -5,7 +5,7 @@
 Name:    starship
 # renovate: datasource=github-releases depName=starship/starship
 Version: 1.22.1
-Release: 1%{?dist}
+Release: 3%{?dist}
 Summary: The minimal, blazing-fast, and infinitely customizable prompt for any shell
 
 License: ISC
