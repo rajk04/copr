@@ -1,0 +1,33 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "develop" branch
+  push:
+    branches: [ "develop" ]
+  pull_request:
+    branches: [ "develop" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  check:
+    name: check
+    runs-on: ubuntu-24.04
+    container: fedora:42
+    steps:
+    - uses: actions/checkout@v4
+    - name: Install rpmlint
+      run: dnf install -y git rpmlint rpmdevtools
+    - name: rpmlint
+      run: rpmlint specs/ --strict
+    - name: Build RPM
+      run: |
+        for file in `ls`; do
+          echo "Building $file..."
+          spectool -Rg "$file"
+          rpmbuild -ba "$file"
+        done
