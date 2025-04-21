@@ -24,6 +24,8 @@ jobs:
       run: dnf install -y git rpmlint rpmdevtools
     - name: rpmlint
       run: rpmlint specs/ --strict
+    - name: Install build dependencies
+      run: dnf install -y cargo pandoc rust
     - name: Build RPM
       run: |
         for file in `ls specs/`; do
