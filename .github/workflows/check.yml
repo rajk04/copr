@@ -22,7 +22,7 @@ jobs:
     - name: rpmlint
       run: rpmlint specs/ --strict
     - name: Install build dependencies
-      run: dnf install -y cargo pandoc rust
+      run: dnf install -y cargo pandoc rust cmake
     - name: Build RPM
       run: |
         for file in `ls specs/`; do
