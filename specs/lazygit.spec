@@ -27,6 +27,8 @@ cp %{SOURCE2} LICENSE
 %install
 install -p -D %{name} %{buildroot}%{_bindir}/%{name}
 
+%check
+
 %files
 %doc CONFIGURATION.md
 %license LICENSE
