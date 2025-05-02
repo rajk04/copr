@@ -4,7 +4,7 @@
 
 Name: eza
 # renovate: datasource=github-releases depName=eza-community/eza
-Version: 0.21.2
+Version: 0.21.3
 Release: 1%{?dist}
 Summary: A modern replacement for ls
 
