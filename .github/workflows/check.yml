@@ -14,7 +14,7 @@ jobs:
   check:
     name: check
     runs-on: ubuntu-24.04-arm
-    container: fedora@sha256:88f2bfcde8a78a00f9621d155af1afe105eca0480bbf795adeb31c1500f09d81
+    container: fedora@sha256:6beec36f3b1c7fd128bb69a59e20d4a897e65a43145ebb252fb39923c98c1c8b
     steps:
     - uses: actions/checkout@v4
     - name: Install rpmlint
