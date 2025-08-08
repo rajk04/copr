@@ -3,7 +3,7 @@
 %global debug_package %{nil}
 
 Name: bun
-# renovate: datasource=github-releases depName=oven-sh/bun extractVersion=bun-v(?<version>.+)
+# renovate: datasource=github-tags depName=oven-sh/bun extractVersion=bun-v(?<version>.+)
 Version: 1.2.12
 Release: 1%{?dist}
 Summary: Bun is an all-in-one JavaScript runtime & toolkit designed for speed, complete with a bundler, test runner, and Node.js-compatible package manager.
