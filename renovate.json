@@ -14,7 +14,7 @@
     },
     {
       "customType": "regex",
-      "fileMatch": ["(?<!bun)\\.spec$"],
+      "fileMatch": ["\\.spec$"],
       "matchStrings": [
         "datasource=(?<datasource>.*?) depName=(?<depName>.*?)\\s+Version:\\s+(?<currentValue>.*)"
       ]
