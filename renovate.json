@@ -6,7 +6,15 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["\\.spec$"],
+      "fileMatch": ["bun\\.spec$"],
+      "matchStrings": [
+        "datasource=(?<datasource>.*?) depName=(?<depName>.*?)\\s+Version:\\s+(?<currentValue>.*)"
+      ],
+      "extractVersionTemplate": "^bun-v(?<version>.*)$"
+    },
+    {
+      "customType": "regex",
+      "fileMatch": ["(?<!bun)\\.spec$"],
       "matchStrings": [
         "datasource=(?<datasource>.*?) depName=(?<depName>.*?)\\s+Version:\\s+(?<currentValue>.*)"
       ]
