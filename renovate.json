@@ -8,8 +8,7 @@
       "customType": "regex",
       "fileMatch": ["\\.spec$"],
       "matchStrings": [
-        "datasource=(?<datasource>.*?) depName=(?<depName>.*?)\\s+Version:\\s+(?<currentValue>.*)",
-        "datasource=(?<datasource>\\S+)\\s+depName=(?<depName>\\S+)\\s+extractVersion=(?<extractVersion>[^\\s]+)[\\s\\S]*?\\nVersion:\\s+(?<currentValue>.+)"
+        "datasource=(?<datasource>.*?) depName=(?<depName>.*?)\\s+Version:\\s+(?<currentValue>.*)"
       ]
     }
   ],
