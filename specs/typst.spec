@@ -4,7 +4,7 @@
 
 Name: typst
 # renovate: datasource=github-releases depName=typst/typst
-Version: 0.14.0
+Version: 0.14.1
 Release: 1%{?dist}
 Summary: A new markup-based typesetting system that is powerful and easy to learn
 
