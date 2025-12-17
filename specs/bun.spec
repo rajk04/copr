@@ -4,7 +4,7 @@
 
 Name: bun
 # renovate: datasource=github-releases depName=oven-sh/bun
-Version: 1.3.4
+Version: 1.3.5
 Release: 1%{?dist}
 Summary: Bun is an all-in-one JavaScript runtime & toolkit designed for speed, complete with a bundler, test runner, and Node.js-compatible package manager.
 
