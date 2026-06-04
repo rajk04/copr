@@ -4,7 +4,7 @@
 
 Name:    lazygit
 # renovate: datasource=github-releases depName=jesseduffield/lazygit
-Version: 0.62.1
+Version: 0.62.2
 Release: 1%{?dist}
 Summary: simple terminal UI for git commands
 
