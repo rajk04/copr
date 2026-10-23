@@ -13,7 +13,7 @@ on:
 jobs:
   check:
     name: check
-    runs-on: ubuntu-24.04-arm
+    runs-on: ubuntu-26.04-arm
     container: fedora@sha256:43b29f65a41eb9c35e1cd5323e3bdf3b655c2357a9f4f1ff2f9c2798e5045d80
     steps:
     - uses: actions/checkout@v5
