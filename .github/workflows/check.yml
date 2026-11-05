@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-24.04-arm
     container: fedora@sha256:a7d72ba2745b100a3351087472e5ee7b2450af7cf331e7673007e3817612839c
     steps:
-    - uses: actions/checkout@v5
+    - uses: actions/checkout@v7
     - name: Install rpmlint
       run: dnf install -y git rpmlint rpmdevtools
     - name: rpmlint
